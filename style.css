@@ -28,7 +28,7 @@ a{
   text-decoration: none;
 }
 .bg-body-tertiary {
-  background-color: transparent !important;
+  opacity: 0.80;
 }
 .navbar-brand {
   padding-left: 10px;
@@ -213,6 +213,8 @@ div > img {
 }
 footer{
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #050911;
   width: 100vw;
   padding: 25px;
@@ -240,8 +242,22 @@ footer p{
   flex-direction: column;
   justify-content: space-between;
 }
-
-
+.form-control, .btn{
+  border-radius: 0;
+}
+.btn{
+  background-color: var(--verdigris);
+  color: white;
+}
+.btn:hover, .btn:focus, .btn:active{
+  background-color: #199ada !important;
+  color: var(--oxford-blue);
+}
+div.socials img {
+  margin-top: 10px;
+  width: 25px;
+  margin-right: 10px;
+}
 
 @media (width<800px) {
   h1 {
