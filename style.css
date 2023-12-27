@@ -283,6 +283,7 @@ footer p{
   }
   .header-link {
     flex-direction: column;
+    align-items: flex-start;
   }
   .book-a-room {
     top: 200px;
