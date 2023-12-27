@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Eleos Reservations</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <a class="navbar-brand" href="#">Eleos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="header-link">
+                    <a href="/index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Rooms</a>
+                    <a href="#">Services</a>
+                    <a href="/gallery.html">Gallery</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <h1>Welcome to Eleos</h1>
+        <h2>Where Comfort Meets Compassion</h2>
+        <button> <a href="#content">Explore Now </a> </button>
+        <form action="" class="book-a-room">
+            <span>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email">
+            </span>
+            <span>
+                <label for="room-type">Room Type</label>
+                <select name="room-type" id="room-type">
+                    <option value="CR">Couples Room</option>
+                    <option value="LS">Luxury Suite</option>
+                </select>
+            </span>
+            <span>
+                <label for="check-in">Check-in</label>
+                <input type="date" name="check-in" id="check-in">
+            </span>
+            <span>
+                <label for="check-out">Check-out</label>
+                <input type="date" name="check-out" id="check-out">
+            </span>
+            <span>
+                <label for="guest">Guest</label>
+                <input type="number" name="guest" id="guest" min="1" max="10">
+            </span>
+            <button>Reserve Now</button>
+        </form>
+    </header>
+    <section class="content" id="content">
+        <aside class="rooms">
+            <div class="room-details">
+                <img src="/compact-size.jpg" alt="compact-size">
+                <div class="details">
+                    <div class="mod-lux">
+                        <h3>Compact Size</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <span class="search">
+                        <img src="search-svgrepo-com.svg" alt="search">
+                    </span>
+                </div>
+            </div>
+            <div class="room-details">
+                <img src="/Modern-facilities.jpg" alt="Modern-facilities">
+                <div class="details">
+                    <div class="mod-lux">
+                        <h3>Modern Facilities</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <span class="search">
+                        <img src="search-svgrepo-com.svg" alt="search">
+                    </span>
+                </div>
+            </div>
+        </aside>
+        <section class="our-services">
+            <h2>Why Choose us</h2>
+            <aside class="why-choose-us">
+                <p class="our-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quasi ducimus.
+                    Odio
+                    necessitatibus, distinctio dolorum magnam iusto quam veniam. Eaque, ad! Corporis nobis aliquid
+                    tempora! Quae accusamus nulla placeat nemo.
+                    Rerum vero maiores</p>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/bar.jpg" class="d-block w-100" alt="Mini Bar">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Mini Bar</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/gym.jpg" class="d-block w-100" alt="Gym">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Gym</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/spa.jpg" class="d-block w-100" alt="Luxurious Spa">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Luxurious Spa</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </aside>
+        </section>
+        <h2> More Rooms</h2>
+        <aside class="room">
+            <div class="room-details">
+                <img src="/luxury-suite.jpg" alt="luxury-suite">
+                <div class="detail">
+                    <div class="mod-lux">
+                        <h4>Luxury Room</h4>
+                        <p>Lorem, ipsum dolor sit</p>
+                    </div>
+                    <span class="search">
+                        <img src="search-svgrepo-com.svg" alt="search">
+                    </span>
+                </div>
+            </div>
+            <div class="room-details">
+                <img src="/twin-suite.jpg" alt="twin-suite">
+                <div class="detail">
+                    <div class="mod-lux">
+                        <h4>Twin Suite</h4>
+                        <p>Lorem, ipsum dolor sit</p>
+                    </div>
+                    <span class="search">
+                        <img src="search-svgrepo-com.svg" alt="search">
+                    </span>
+                </div>
+            </div>
+            <div class="room-details">
+                <img src="/business-suite.jpg" alt="business-suite">
+                <div class="detail">
+                    <div class="mod-lux">
+                        <h4>Business Suite</h4>
+                        <p>Lorem, ipsum dolor sit</p>
+                    </div>
+                    <span class="search">
+                        <img src="search-svgrepo-com.svg" alt="search">
+                    </span>
+                </div>
+            </div>
+        </aside>
+
+        <section class="reviews">
+            <h2>Our reviews</h2>
+            <div class="review">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptates nesciunt! Unde
+                            iusto odit expedita nemo voluptatibus sint fuga quaerat quam quos similique veritatis, qui
+                            nulla dignissimos dolorum. Laborum, neque?</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        By <cite title="Source Title">Testing</cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="review">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis quasi quia,
+                            culpa recusandae dolor ullam nesciunt voluptate sapiente expedita quidem optio neque saepe
+                            iure ea consectetur rem voluptates animi?</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        By <cite title="Source Title">Testing</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <footer>
+            <aside class="newsletter">
+                <h3>Newsletter</h3>
+                <hp>Subscribe to our Newsletter for latest offer and promotions</p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="email"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe Now</button>
+                        </div>
+                    </form>
+            </aside>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <div class="means">
+                    <img src="/phone-svgrepo-com.svg" alt="phone-icon">
+                    <p>+2348133884817</p>
+                </div>
+                <div class="means">
+                    <img src="/email-svgrepo-com.svg" alt="email-icon">
+                    <p>addebayoa@gmail.com</p>
+                </div>
+                <div class="means">
+                    <img src="/location-pin-svgrepo-com.svg" alt="location-icon">
+                    <p>Hotel in Abuja</p>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap.js"></script>
+</body>
+
+</html>
